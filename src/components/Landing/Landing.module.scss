@@ -1,0 +1,80 @@
+@media only screen and (min-width: 768px) {
+  // FOR DESKTOP AND TABLET
+  .landing {
+    display: flex;
+
+    .addict {
+      // position: relative;
+      // width: 300px;
+      // display: block;
+      // margin-left: -90px;
+      // transform: rotate(90deg);
+
+      // width: 18.6111vw;
+      height: calc(11.5385vw - 0.115385);
+      margin-left: 40px;
+      display: block;
+      transform: rotate(-90deg) translate(-100%, 0);
+      transform-origin: top left;
+
+      margin-top: 150px;
+      font-family: sans-serif;
+
+      p {
+        width: 150px;
+        margin: 0px -10px;
+      }
+    }
+
+    .addict p:before,
+    .addict p:after {
+      content: "";
+      position: absolute;
+      // height: 5px;
+      border-bottom: 1px solid gray;
+      border-top: 1px solid gray;
+      top: 0;
+      width: 80px;
+    }
+    .addict p:before {
+      right: 100%;
+      margin-top: 7px;
+
+      margin-right: 23px;
+    }
+    .addict p:after {
+      left: 100%;
+
+      margin-top: 7px;
+      margin-left: -2px;
+    }
+
+    .intro {
+      h3 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    .profilePic {
+      img {
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+}
+
+// @media only screen and (min-width: 768px) {
+//   // FOR DESKTOP AND TABLET
+
+// }
+
+// @media only screen and (max-width: 767px) {
+//   /* phones */
+
+// }
