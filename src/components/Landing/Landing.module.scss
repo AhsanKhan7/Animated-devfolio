@@ -2,6 +2,7 @@
   // FOR DESKTOP AND TABLET
   .landing {
     display: flex;
+    height: 100vh;
 
     .addict {
       // position: relative;
@@ -50,16 +51,74 @@
     }
 
     .intro {
+      width: 850px;
+      font-family: "Open Sans", sans-serif;
+      margin-left: -60px;
+      h4 {
+        margin-top: 65px;
+      }
       h3 {
-        font-size: 30px;
+        margin-top: 165px;
+        font-size: 35px;
         font-weight: 400;
-        font-family: "Open Sans", sans-serif;
+        span {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.125rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            height: 0.75rem;
+
+            // Position the line behind the text so that
+            // it is still easily readable
+            z-index: -1;
+
+            // The SVG is added as an SVG background image
+            // background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+            background-repeat: no-repeat;
+
+            background-image: url("../../assets/underLine.svg");
+
+            // This allows the SVG to flex in size to fit
+            // any length of word. If the word is short,
+            // the SVG will be stretched vertically, if it
+            // is long, the SVG will be stretched horizontally.
+            // The jagged nature of this particular SVG works
+            // with this transforming.
+            background-size: cover;
+          }
+        }
+      }
+
+      h5 {
+        margin-top: 50px;
       }
     }
 
     .profilePic {
+      margin-top: 30px;
+
+      position: relative;
+      top: 15%;
+      left: 1%;
+      animation-name: jump;
+      animation-duration: 2s;
+      // animation-iteration-count: infinite;
       img {
+        // left: 25%;
+        // animation-timing-function: linear;
         width: 350px;
+        height: 500px;
+      }
+    }
+    @keyframes jump {
+      50% {
+        // top: 10%;
+        // left: 10%;
+        right: 10%;
       }
     }
   }
