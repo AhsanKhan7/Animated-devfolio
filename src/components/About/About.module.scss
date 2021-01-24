@@ -30,35 +30,35 @@
       }
     }
 
-    .section2 {
-      margin-left: 60px;
-      margin-top: 30px;
-      height: 90vh;
-      p {
-        width: 100%;
-        font-size: 5vw;
-        span {
-          position: relative;
+    // .section2 {
+    //   margin-left: 60px;
+    //   margin-top: 30px;
+    //   height: 90vh;
+    //   p {
+    //     width: 100%;
+    //     font-size: 5vw;
+    //     span {
+    //       position: relative;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -0.125rem;
-            left: -0.5rem;
-            right: -0.5rem;
-            height: 0.75rem;
-            z-index: -1;
-            background-repeat: no-repeat;
-            background-image: url("../../assets/paraUnderLineOrange.svg");
-            background-size: cover;
-          }
-        }
-      }
-    }
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         bottom: -0.125rem;
+    //         left: -0.5rem;
+    //         right: -0.5rem;
+    //         height: 0.75rem;
+    //         z-index: -1;
+    //         background-repeat: no-repeat;
+    //         background-image: url("../../assets/paraUnderLineOrange.svg");
+    //         background-size: cover;
+    //       }
+    //     }
+    //   }
+    // }
 
     .section3 {
       margin-left: 60px;
-      margin-top: -40px;
+      margin-top: 40px;
       height: 80vh;
       p {
         width: 100%;
@@ -115,35 +115,35 @@
       }
     }
 
-    .section2 {
-      margin-left: 60px;
-      margin-top: 30px;
-      height: 90vh;
-      p {
-        width: 100%;
-        font-size: 5vw;
-        span {
-          position: relative;
+    // .section2 {
+    //   margin-left: 60px;
+    //   margin-top: 30px;
+    //   height: 90vh;
+    //   p {
+    //     width: 100%;
+    //     font-size: 5vw;
+    //     span {
+    //       position: relative;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -0.125rem;
-            left: -0.5rem;
-            right: -0.5rem;
-            height: 0.75rem;
-            z-index: 1;
-            background-repeat: no-repeat;
-            background-image: url("../../assets/paraUnderLine.svg");
-            background-size: cover;
-          }
-        }
-      }
-    }
+    //       &::after {
+    //         content: "";
+    //         position: absolute;
+    //         bottom: -0.125rem;
+    //         left: -0.5rem;
+    //         right: -0.5rem;
+    //         height: 0.75rem;
+    //         z-index: 1;
+    //         background-repeat: no-repeat;
+    //         background-image: url("../../assets/paraUnderLine.svg");
+    //         background-size: cover;
+    //       }
+    //     }
+    //   }
+    // }
 
     .section3 {
       margin-left: 60px;
-      margin-top: -40px;
+      margin-top: 40px;
       height: 80vh;
       p {
         width: 100%;

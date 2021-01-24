@@ -5,6 +5,7 @@
     background-color: black;
     display: flex;
     justify-content: space-around;
+    padding-top: 100px;
     .section1 {
       h2 {
         font-family: sans-serif;
@@ -44,6 +45,15 @@
         cursor: pointer;
       }
     }
+  }
+  .coat {
+    margin-top: -5%;
+    padding-bottom: 3%;
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
   }
 }
 

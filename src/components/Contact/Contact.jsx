@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Contact = () => {
   AOS.init();
 
-  const coat = `{ Imagination is better than knowledge }`;
+  const coat = `{ Imagination is important than knowledge }`;
 
   return (
     <>
@@ -42,7 +42,7 @@ const Contact = () => {
           </section>
         </section>
       </section>
-      <section>{coat}</section>
+      <section className={styles.coat}>{coat}</section>
     </>
   );
 };

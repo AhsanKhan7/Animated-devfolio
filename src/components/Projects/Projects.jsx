@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Projects.module.scss";
 import circleImg from "../../assets/circleImg.png";
 import githubImg from "../../assets/github.svg";
@@ -6,18 +6,184 @@ import githubImg from "../../assets/github.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import useWindowSize from "../useWindowSize";
+
 import Project1_1 from "../../assets/project1_1.png";
 import Project1_2 from "../../assets/project1_2.png";
+
 import Project2_1 from "../../assets/project2_1.png";
 import Project2_2 from "../../assets/project2_2.png";
+
 import Project3_1 from "../../assets/project3_1.png";
 import Project3_2 from "../../assets/project3_2.png";
 
+import Project4_1 from "../../assets/project4_1.png";
+import Project4_2 from "../../assets/project4_2.png";
+
+import Project5_1 from "../../assets/project5_1.png";
+import Project5_2 from "../../assets/project5_2.png";
+
 const Projects = () => {
   AOS.init();
+
+  // const size = useWindowSize();
+
+  // // REF
+  // let app = useRef();
+  // let scrollContainer = useRef();
+
+  // const skewConfigs = {
+  //   ease: 0.1,
+  //   current: 0,
+  //   previous: 0,
+  //   rounded: 0,
+  // };
+
+  // useEffect(() => {
+  //   requestAnimationFrame(() => skewScrolling());
+  // }, []);
+
+  // useEffect(() => {
+  //   document.body.style.height = `${
+  //     scrollContainer.current.getBoundingClientRect().height
+  //   }px`;
+  // }, [size.height]);
+
+  // const skewScrolling = () => {
+  //   skewConfigs.current = window.scrollY;
+  //   skewConfigs.previous +=
+  //     (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
+  //   skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
+
+  //   // Varialbles
+  //   const difference = skewConfigs.current - skewConfigs.rounded;
+  //   const acceleration = difference / size.width;
+  //   const velocity = +acceleration;
+  //   const skew = velocity * 7.5;
+
+  //   // assing skew and smooth scrolling
+
+  //   scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
+
+  //   requestAnimationFrame(() => skewScrolling());
+  // };
+
   return (
     <div className={styles.projects}>
       <h2 className={styles.projectsHeading}>Projects</h2>
+
+      <section>
+        <div className={styles.projectDescDiv}>
+          <section className={styles.projectDescDiv1}>
+            <h1 className={styles.singleProjectHeading}>OnCart24</h1>
+
+            <h3>PRJ CONCEPT</h3>
+            <p>
+              A progressive web app of an online grocery store for multi-vendors
+              and admins. where users from different locations order grocery and
+              the nearest registered vendor deliver the order.
+            </p>
+            <h3>TECH BEING IMPLEMENTED</h3>
+            <section className={styles.techDesc}>
+              <section>
+                <ul>
+                  <li>React.js</li>
+                  <li>Redux</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                </ul>
+              </section>
+              <section>
+                <ul>
+                  <li>HTML5</li>
+                  <li>SCSS</li>
+                  <li>React-Bootstrap</li>
+                  <li>JSON web Token</li>
+                  <li>Axios</li>
+                  <li>Paypal Integration</li>
+                  <li>Payment Gateways</li>
+                </ul>
+              </section>
+            </section>
+            {/* <h3>
+              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
+            </h3> */}
+          </section>
+          <section className={styles.projectDescDiv2}>
+            <img src={circleImg} alt="img" />
+          </section>
+        </div>
+        <section
+          data-aos="fade-up"
+          data-aos-duration="2400"
+          className={styles.imgBox}
+        >
+          <img src={Project1_2} alt="projectImg" />
+          <img src={Project1_1} alt="projectImg" />
+        </section>
+      </section>
+
+      <hr className={styles.middleLine} />
+
+      <section>
+        <div className={styles.projectDescDiv1_1}>
+          <section className={styles.projectDescDiv2}>
+            <img src={circleImg} alt="img" />
+          </section>
+          <section className={styles.projectDescDiv1}>
+            <h1 className={styles.singleProjectHeading}>
+              Admirals Transportation
+            </h1>
+
+            <h3>PRJ CONCEPT</h3>
+            <p>
+              A progressive web app of an online luxury car booking. where the
+              team of an admin receives bookings from different cities or areas.
+              and provide some state ofthe art cars like sedan and SUV for users
+              transportation.
+            </p>
+            <h3>TECH BEING IMPLEMENTED</h3>
+            <section className={styles.techDesc}>
+              <section>
+                <ul>
+                  <li>React.js</li>
+                  <li>Redux</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                </ul>
+              </section>
+              <section>
+                <ul>
+                  <li>HTML5</li>
+                  <li>SCSS</li>
+                  <li>React-Bootstrap</li>
+                  <li>JSON web Token</li>
+                  <li>Axios</li>
+                  <li>Paypal Integration</li>
+                  <li>Payment Gateways</li>
+                </ul>
+              </section>
+            </section>
+            {/* <h3>
+              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
+            </h3> */}
+          </section>
+        </div>
+        <section
+          data-aos="fade-up"
+          data-aos-duration="2400"
+          className={styles.imgBox}
+        >
+          <img src={Project2_2} alt="projectImg" />
+          <img src={Project2_1} alt="projectImg" />
+        </section>
+      </section>
+
+      <hr className={styles.middleLine} />
 
       <section>
         <div className={styles.projectDescDiv}>
@@ -66,8 +232,8 @@ const Projects = () => {
           data-aos-duration="2400"
           className={styles.imgBox}
         >
-          <img src={Project1_1} alt="projectImg" />
-          <img src={Project1_2} alt="projectImg" />
+          <img src={Project3_1} alt="projectImg" />
+          <img src={Project3_2} alt="projectImg" />
         </section>
       </section>
 
@@ -79,7 +245,7 @@ const Projects = () => {
             <img src={circleImg} alt="img" />
           </section>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>Expensify APP</h1>
+            <h1 className={styles.singleProjectHeading}>Expensify App</h1>
 
             <h3>PRJ CONCEPT</h3>
             <p>
@@ -93,16 +259,18 @@ const Projects = () => {
               <section>
                 <ul>
                   <li>React.js</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>Firebase</li>
-                  <li>HTML5</li>
+                  <li>Redux</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Node.js</li>
                 </ul>
               </section>
               <section>
                 <ul>
                   <li>Express.js</li>
-                  <li>Node.js</li>
+                  <li>HTML5</li>
                   <li>React-Bootstrap</li>
+                  <li>JSON web Token</li>
                   <li>Axios</li>
                 </ul>
               </section>
@@ -117,8 +285,8 @@ const Projects = () => {
           data-aos-duration="2400"
           className={styles.imgBox}
         >
-          <img src={Project2_2} alt="projectImg" />
-          <img src={Project2_1} alt="projectImg" />
+          <img src={Project4_2} alt="projectImg" />
+          <img src={Project4_1} alt="projectImg" />
         </section>
       </section>
 
@@ -127,7 +295,7 @@ const Projects = () => {
       <section>
         <div className={styles.projectDescDiv}>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>Indecision APP</h1>
+            <h1 className={styles.singleProjectHeading}>Indecision App</h1>
 
             <h3>PRJ CONCEPT</h3>
             <p>
@@ -141,14 +309,14 @@ const Projects = () => {
                 <ul>
                   <li>React.js</li>
                   <li>Redux</li>
-                  <li>JSON data</li>
+                  <li>Firebase</li>
                 </ul>
               </section>
               <section>
                 <ul>
-                  <li>JavaScript (ES6)</li>
-                  <li>SASS</li>
                   <li>HTML5</li>
+                  <li>React-Bootstrap</li>
+                  <li>SCSS</li>
                 </ul>
               </section>
             </section>
@@ -165,58 +333,8 @@ const Projects = () => {
           data-aos-duration="2400"
           className={styles.imgBox}
         >
-          <img src={Project3_2} alt="projectImg" />
-          <img src={Project3_1} alt="projectImg" />
-        </section>
-      </section>
-
-      <hr className={styles.middleLine} />
-
-      <section>
-        <div className={styles.projectDescDiv1_1}>
-          <section className={styles.projectDescDiv2}>
-            <img src={circleImg} alt="img" />
-          </section>
-          <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>
-              Abdullah Enterprises
-            </h1>
-
-            <h3>PRJ CONCEPT</h3>
-            <p>
-              A website for a local printing press. In this you can see
-              animations lottie files Google map integration and lot of other
-              things to make UI better and intrested.
-            </p>
-            <h3>TECH BEING IMPLEMENTED</h3>
-            <section className={styles.techDesc}>
-              <section>
-                <ul>
-                  <li>React.js</li>
-                  <li>HTML5</li>
-                  <li>SASS</li>
-                </ul>
-              </section>
-              <section>
-                <ul>
-                  <li>Embedded map</li>
-                  <li>Lottie Files</li>
-                  <li>Animation</li>
-                </ul>
-              </section>
-            </section>
-            <h3>
-              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
-            </h3>
-          </section>
-        </div>
-        <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
-          className={styles.imgBox}
-        >
-          <img src={Project2_2} alt="projectImg" />
-          <img src={Project2_1} alt="projectImg" />
+          <img src={Project5_2} alt="projectImg" />
+          <img src={Project5_1} alt="projectImg" />
         </section>
       </section>
 
