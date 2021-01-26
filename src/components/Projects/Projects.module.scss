@@ -11,13 +11,15 @@
       text-align: left;
       font-family: sans-serif;
       padding: 10px 0 10px 150px;
-      margin-left: 50px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 50px;
       font-size: 50px;
       border-top: 1px solid #d3d3d3;
       border-bottom: 1px solid #d3d3d3;
     }
-    .singleProjectHeading {
+    .singleProjectHeading a {
+      text-decoration: none !important;
       color: orange;
       width: 350px;
       font-size: 30px;
@@ -28,20 +30,29 @@
     .middleLine {
       margin: 60px 0;
       width: 89%;
-      margin-left: 50px;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #d3d3d3;
     }
     h2 {
       color: rgb(224, 223, 219);
-      text-align: right;
+      text-align: right !important;
       font-family: sans-serif;
       font-size: 25px;
       margin-top: 80px;
       margin-bottom: -30px;
       margin-right: 60px;
       cursor: pointer;
+      text-decoration: none !important;
     }
     h2:hover {
+      color: orange;
+    }
+    a {
+      color: rgb(224, 223, 219);
+      text-decoration: none !important;
+    }
+    a:hover {
       color: orange;
     }
 
@@ -64,6 +75,13 @@
         img {
           width: 35px;
           height: 35px;
+        }
+        span a {
+          text-decoration: none !important;
+          color: white;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
         }
         .techDesc {
           display: flex;
@@ -145,6 +163,13 @@
           width: 35px;
           height: 35px;
         }
+        span a {
+          text-decoration: none !important;
+          color: white;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
         .techDesc {
           display: flex;
 
@@ -173,7 +198,199 @@
   }
 }
 
-// @media only screen and (max-width: 767px) {
-//   /* phones */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .projects {
+    background-color: black;
+    color: #ffffff;
+    overflow: hidden !important;
+    .projectsHeading {
+      width: 89%;
+      color: orange;
+      text-align: left;
+      font-family: sans-serif;
+      padding: 5px 0 5px 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      font-size: 7vw;
+      border-top: 1px solid #d3d3d3;
+      border-bottom: 1px solid #d3d3d3;
+    }
+    .singleProjectHeading a {
+      text-decoration: none !important;
+      color: orange;
+      // width: 350px;
+      font-size: 5vw;
+      margin-top: 20px;
+      cursor: pointer;
+    }
 
-// }
+    .middleLine {
+      margin: 30px 0;
+      width: 89%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #d3d3d3;
+    }
+    h2 {
+      color: rgb(224, 223, 219);
+      text-align: right;
+      font-family: sans-serif;
+      font-size: 25px;
+      margin-top: 40px;
+      margin-bottom: -10px;
+      margin-right: 20px;
+      cursor: pointer;
+      text-decoration: none !important;
+    }
+    h2:hover {
+      color: orange;
+    }
+    a {
+      color: rgb(224, 223, 219);
+      text-decoration: none !important;
+    }
+    a:hover {
+      color: orange;
+    }
+
+    .projectDescDiv {
+      display: flex;
+      justify-content: space-around;
+      font-family: sans-serif;
+
+      .projectDescDiv1 {
+        width: 50%;
+        margin-left: 20px;
+        h3 {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          color: #d3d3d3;
+        }
+        p {
+          font-size: 20px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span a {
+          text-decoration: none !important;
+          color: white;
+        }
+        .techDesc {
+          display: flex;
+
+          section:nth-child(2) {
+            margin-left: 30px;
+          }
+          li {
+            margin-top: 7px;
+          }
+        }
+      }
+
+      .projectDescDiv2 {
+        width: 50%;
+        margin-top: 200px;
+        img {
+          width: 250px;
+          height: 250px;
+          transform: rotate(100deg) translate(-10%, 0);
+          transition: transform 2s;
+        }
+        img:hover {
+          transform: rotate(130deg) translate(-10%, 0);
+        }
+      }
+    }
+
+    .imgBox {
+      position: relative;
+      width: 80%;
+      height: 200px;
+      margin: 30px auto 10px;
+      overflow: hidden;
+      img {
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: 1s;
+        pointer-events: none;
+      }
+      &:hover img:nth-child(2) {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-50%) scaleX(2);
+      }
+      img img:nth-child(1) {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(50%) scaleX(2);
+      }
+      &:hover img:nth-child(1) {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0) scaleX(1);
+      }
+    }
+
+    // Div2
+    .projectDescDiv1_1 {
+      display: flex;
+      justify-content: space-around;
+      font-family: sans-serif;
+
+      .projectDescDiv1 {
+        width: 50%;
+        margin-left: 50px;
+        h3 {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          color: #d3d3d3;
+        }
+        p {
+          font-size: 20px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span a {
+          text-decoration: none !important;
+          color: white;
+        }
+        .techDesc {
+          display: flex;
+
+          section:nth-child(2) {
+            margin-left: 20px;
+          }
+          li {
+            margin-top: 7px;
+          }
+        }
+      }
+
+      .projectDescDiv2 {
+        width: 50%;
+        margin-top: 200px;
+        margin-left: -60px;
+        img {
+          width: 250px;
+          height: 250px;
+          transform: rotate(60deg) translate(-10%, 0);
+          transition: transform 2s;
+        }
+        img:hover {
+          transform: rotate(40deg) translate(-10%, 0);
+        }
+      }
+    }
+  }
+}

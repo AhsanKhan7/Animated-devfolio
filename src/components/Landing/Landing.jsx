@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Landing.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Landing = () => {
   AOS.init();
+
+  const [show, setShow] = useState();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 500);
+  }, [show]);
+
   return (
     <div className={styles.landing}>
       <section className={styles.addict}>
@@ -34,7 +43,7 @@ const Landing = () => {
           Ahsandev.pro@gmail.com
         </h5>
       </section>
-      <section className={styles.profilePic}>
+      <section className={show ? styles.profilePic : styles.profilePicNo}>
         <img
           src="https://images.unsplash.com/photo-1609058745811-2e87ab15790a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
           alt="DP"

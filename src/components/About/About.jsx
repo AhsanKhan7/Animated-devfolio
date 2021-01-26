@@ -10,13 +10,22 @@ const About = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 720) {
+      if (window.innerWidth > 768 && window.scrollY > 720) {
         handleShow(true);
       } else handleShow(false);
     });
-    return () => {
-      window.removeEventListener("scroll");
-    };
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
+
+    // window.addEventListener("scroll", () => {
+    //   if (window.innerWidth < 768 && window.scrollY > 410) {
+    //     handleShow(true);
+    //   } else handleShow(false);
+    // });
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
   }, []);
 
   return (

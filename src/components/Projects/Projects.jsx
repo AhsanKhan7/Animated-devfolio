@@ -75,9 +75,17 @@ const Projects = () => {
       <section>
         <div className={styles.projectDescDiv}>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>OnCart24</h1>
+            <h1 className={styles.singleProjectHeading}>
+              <a
+                href="https://vigorous-franklin-94f857.netlify.app/"
+                target="_blank"
+              >
+                OnCart24
+              </a>
+            </h1>
 
             <h3>PRJ CONCEPT</h3>
+
             <p>
               A progressive web app of an online grocery store for multi-vendors
               and admins. where users from different locations order grocery and
@@ -134,7 +142,9 @@ const Projects = () => {
           </section>
           <section className={styles.projectDescDiv1}>
             <h1 className={styles.singleProjectHeading}>
-              Admirals Transportation
+              <a href="https://admirals-89f16.web.app/" target="_blank">
+                Admirals Transportation
+              </a>
             </h1>
 
             <h3>PRJ CONCEPT</h3>
@@ -220,7 +230,12 @@ const Projects = () => {
               </section>
             </section>
             <h3>
-              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
+              <img src={githubImg} alt="githubLogo" />{" "}
+              <span>
+                <a href="https://github.com/AhsanKhan7/ProShop" target="_blank">
+                  VIEW REPO
+                </a>
+              </span>
             </h3>
           </section>
           <section className={styles.projectDescDiv2}>
@@ -245,7 +260,14 @@ const Projects = () => {
             <img src={circleImg} alt="img" />
           </section>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>Expensify App</h1>
+            <h1 className={styles.singleProjectHeading}>
+              <a
+                href="https://react-expensify-app-ahsan.herokuapp.com/"
+                target="_blank"
+              >
+                Expensify App
+              </a>
+            </h1>
 
             <h3>PRJ CONCEPT</h3>
             <p>
@@ -260,23 +282,27 @@ const Projects = () => {
                 <ul>
                   <li>React.js</li>
                   <li>Redux</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose</li>
-                  <li>Node.js</li>
+                  <li>Firebase</li>
                 </ul>
               </section>
               <section>
                 <ul>
-                  <li>Express.js</li>
                   <li>HTML5</li>
+                  <li>SCSS</li>
                   <li>React-Bootstrap</li>
-                  <li>JSON web Token</li>
-                  <li>Axios</li>
                 </ul>
               </section>
             </section>
             <h3>
-              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
+              <img src={githubImg} alt="githubLogo" />{" "}
+              <span>
+                <a
+                  href="https://github.com/AhsanKhan7/expensify-app"
+                  target="_blank"
+                >
+                  VIEW REPO
+                </a>
+              </span>
             </h3>
           </section>
         </div>
@@ -295,7 +321,11 @@ const Projects = () => {
       <section>
         <div className={styles.projectDescDiv}>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>Indecision App</h1>
+            <h1 className={styles.singleProjectHeading}>
+              <a href="https://indecision-app-2d94b.web.app/" target="_blank">
+                Indecision App
+              </a>
+            </h1>
 
             <h3>PRJ CONCEPT</h3>
             <p>
@@ -309,7 +339,7 @@ const Projects = () => {
                 <ul>
                   <li>React.js</li>
                   <li>Redux</li>
-                  <li>Firebase</li>
+                  <li>JSON storage</li>
                 </ul>
               </section>
               <section>
@@ -321,7 +351,15 @@ const Projects = () => {
               </section>
             </section>
             <h3>
-              <img src={githubImg} alt="githubLogo" /> <span>VIEW REPO</span>
+              <img src={githubImg} alt="githubLogo" />{" "}
+              <span>
+                <a
+                  href="https://github.com/AhsanKhan7/Indecision-app"
+                  target="_blank"
+                >
+                  VIEW REPO
+                </a>
+              </span>
             </h3>
           </section>
           <section className={styles.projectDescDiv2}>
@@ -338,7 +376,12 @@ const Projects = () => {
         </section>
       </section>
 
-      <h2>More Projects on Github </h2>
+      <h2>
+        {" "}
+        <a href="https://github.com/AhsanKhan7" target="_blank">
+          More Projects on Github
+        </a>{" "}
+      </h2>
       <hr className={styles.middleLine} />
     </div>
   );

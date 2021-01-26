@@ -29,3 +29,11 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #bd8022;
 }
+
+.anim {
+  display: none;
+}
+.anim2 {
+  position: absolute;
+  width: 100%;
+}
