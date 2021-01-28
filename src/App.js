@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       <section className={show ? "anim" : "anim2"}>
-        <Lottie options={defaultOptions} />
+        <Lottie options={defaultOptions} speed={-20} />
       </section>
       <Landing />
       <About />
