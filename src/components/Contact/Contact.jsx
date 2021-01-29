@@ -28,17 +28,44 @@ const Contact = () => {
             <marquee style={{ color: "white", width: "40px" }}>Social</marquee>
           </> */}
             <section className={styles.links}>
-              <h5>Linkedin</h5>
+              <h5>
+                <a
+                  href="https://www.linkedin.com/in/ahsan-naseem-4906371ab/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </a>
+              </h5>
             </section>
             <section className={styles.links}>
-              <h5>Twitter</h5>
+              <h5>
+                <a
+                  href="https://twitter.com/Ahsan14595099"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
+              </h5>
             </section>
             <section className={styles.links}>
-              <h5>Facebook</h5>
+              <h5>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100004555336801"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </h5>
             </section>
           </section>
           <section className={styles.section2_1}>
-            <h5>Ahsandev.pro@gmail.com</h5>
+            <h5>
+              {" "}
+              <a href="mailto:ahsandev.pro@gmail.com">Ahsandev.pro@gmail.com</a>
+            </h5>
           </section>
         </section>
       </section>

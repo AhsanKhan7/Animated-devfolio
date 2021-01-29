@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 
 import Lottie from "react-lottie";
-import animationData from "./assets/trans.json";
+import animationData from "./assets/trans1.json";
 
 const App = () => {
   const defaultOptions = {
@@ -24,19 +24,23 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 500);
+    }, 1170);
   }, [show]);
 
   return (
     <>
       <section className={show ? "anim" : "anim2"}>
-        <Lottie options={defaultOptions} speed={-20} />
+        <Lottie options={defaultOptions} />
       </section>
-      <Landing />
-      <About />
-      <Projects />
-      <BottomPara />
-      <Contact />
+      {show && (
+        <>
+          <Landing />
+          <About />
+          <Projects />
+          <BottomPara />
+          <Contact />
+        </>
+      )}
     </>
   );
 };

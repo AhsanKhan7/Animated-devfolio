@@ -6,14 +6,6 @@ import "aos/dist/aos.css";
 const Landing = () => {
   AOS.init();
 
-  const [show, setShow] = useState();
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 500);
-  }, [show]);
-
   return (
     <div className={styles.landing}>
       <section className={styles.addict}>
@@ -40,10 +32,10 @@ const Landing = () => {
           </h3>
         </h3>
         <h5 data-aos="fade-up" data-aos-duration="3000">
-          Ahsandev.pro@gmail.com
+          <a href="mailto:ahsandev.pro@gmail.com">Ahsandev.pro@gmail.com</a>
         </h5>
       </section>
-      <section className={show ? styles.profilePic : styles.profilePicNo}>
+      <section className={styles.profilePic}>
         <img
           src="https://images.unsplash.com/photo-1609058745811-2e87ab15790a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
           alt="DP"

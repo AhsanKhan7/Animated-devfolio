@@ -1,5 +1,6 @@
 @media only screen and (min-width: 768px) {
   // FOR DESKTOP AND TABLET
+
   .landing {
     display: flex;
     height: 100vh;
@@ -74,7 +75,12 @@
       }
 
       h5 {
-        margin-top: 50px;
+        margin-top: 50px !important;
+      }
+      h5 a {
+        text-decoration: none !important;
+        cursor: pointer;
+        color: black;
       }
     }
 
@@ -169,7 +175,12 @@
       }
 
       h5 {
-        margin-top: 25px; //
+        margin-top: 25px;
+      }
+      h5 a {
+        text-decoration: none !important;
+        cursor: pointer;
+        color: white;
       }
     }
 
@@ -183,9 +194,6 @@
         width: 150px;
         height: 250px;
       }
-    }
-    .profilePicNo {
-      display: none;
     }
   }
 }

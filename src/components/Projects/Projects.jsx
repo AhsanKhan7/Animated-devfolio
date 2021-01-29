@@ -79,6 +79,7 @@ const Projects = () => {
               <a
                 href="https://vigorous-franklin-94f857.netlify.app/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 OnCart24
               </a>
@@ -142,7 +143,11 @@ const Projects = () => {
           </section>
           <section className={styles.projectDescDiv1}>
             <h1 className={styles.singleProjectHeading}>
-              <a href="https://admirals-89f16.web.app/" target="_blank">
+              <a
+                href="https://admirals-89f16.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Admirals Transportation
               </a>
             </h1>
@@ -198,15 +203,23 @@ const Projects = () => {
       <section>
         <div className={styles.projectDescDiv}>
           <section className={styles.projectDescDiv1}>
-            <h1 className={styles.singleProjectHeading}>ProShop</h1>
+            <h1 className={styles.singleProjectHeading}>
+              <a
+                href="https://proshopappahsankhan7.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ProShop
+              </a>
+            </h1>
 
             <h3>PRJ CONCEPT</h3>
             <p>
               A Project to create a Ecommerce products shop that includes all
-              functionality like userProfile ratings cart checkout payment
-              gateways and also Admin panel to see all users orders make/edit or
-              delete a product, this project also show you top rated products
-              that's rated by all users
+              functionality like userProfile ratings comments cart checkout
+              payment gateways and also Admin panel to see all users orders
+              make/edit or delete a product, this project also show you top
+              rated products that's rated by all users
             </p>
             <h3>TECH BEING IMPLEMENTED</h3>
             <section className={styles.techDesc}>
@@ -232,7 +245,11 @@ const Projects = () => {
             <h3>
               <img src={githubImg} alt="githubLogo" />{" "}
               <span>
-                <a href="https://github.com/AhsanKhan7/ProShop" target="_blank">
+                <a
+                  href="https://github.com/AhsanKhan7/ProShop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   VIEW REPO
                 </a>
               </span>
@@ -264,6 +281,7 @@ const Projects = () => {
               <a
                 href="https://react-expensify-app-ahsan.herokuapp.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Expensify App
               </a>
@@ -299,6 +317,7 @@ const Projects = () => {
                 <a
                   href="https://github.com/AhsanKhan7/expensify-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   VIEW REPO
                 </a>
@@ -322,7 +341,11 @@ const Projects = () => {
         <div className={styles.projectDescDiv}>
           <section className={styles.projectDescDiv1}>
             <h1 className={styles.singleProjectHeading}>
-              <a href="https://indecision-app-2d94b.web.app/" target="_blank">
+              <a
+                href="https://indecision-app-2d94b.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Indecision App
               </a>
             </h1>
@@ -356,6 +379,7 @@ const Projects = () => {
                 <a
                   href="https://github.com/AhsanKhan7/Indecision-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   VIEW REPO
                 </a>
@@ -378,7 +402,11 @@ const Projects = () => {
 
       <h2>
         {" "}
-        <a href="https://github.com/AhsanKhan7" target="_blank">
+        <a
+          href="https://github.com/AhsanKhan7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           More Projects on Github
         </a>{" "}
       </h2>
