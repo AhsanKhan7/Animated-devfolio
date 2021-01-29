@@ -26,50 +26,50 @@ import Project5_2 from "../../assets/project5_2.png";
 const Projects = () => {
   AOS.init();
 
-  // const size = useWindowSize();
+  const size = useWindowSize();
 
-  // // REF
-  // let app = useRef();
-  // let scrollContainer = useRef();
+  // REF
+  let app = useRef();
+  let scrollContainer = useRef();
 
-  // const skewConfigs = {
-  //   ease: 0.1,
-  //   current: 0,
-  //   previous: 0,
-  //   rounded: 0,
-  // };
+  const skewConfigs = {
+    ease: 0.1,
+    current: 0,
+    previous: 0,
+    rounded: 0,
+  };
 
-  // useEffect(() => {
-  //   requestAnimationFrame(() => skewScrolling());
-  // }, []);
+  useEffect(() => {
+    requestAnimationFrame(() => skewScrolling());
+  }, []);
 
-  // useEffect(() => {
-  //   document.body.style.height = `${
-  //     scrollContainer.current.getBoundingClientRect().height
-  //   }px`;
-  // }, [size.height]);
+  useEffect(() => {
+    document.body.style.height = `${
+      scrollContainer.current.getBoundingClientRect().height
+    }px`;
+  }, [size.height]);
 
-  // const skewScrolling = () => {
-  //   skewConfigs.current = window.scrollY;
-  //   skewConfigs.previous +=
-  //     (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
-  //   skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
+  const skewScrolling = () => {
+    skewConfigs.current = window.scrollY;
+    skewConfigs.previous +=
+      (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease;
+    skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
 
-  //   // Varialbles
-  //   const difference = skewConfigs.current - skewConfigs.rounded;
-  //   const acceleration = difference / size.width;
-  //   const velocity = +acceleration;
-  //   const skew = velocity * 7.5;
+    // Varialbles
+    const difference = skewConfigs.current - skewConfigs.rounded;
+    const acceleration = difference / size.width;
+    const velocity = +acceleration;
+    const skew = velocity * 7.5;
 
-  //   // assing skew and smooth scrolling
+    // assing skew and smooth scrolling
 
-  //   scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
+    scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
 
-  //   requestAnimationFrame(() => skewScrolling());
-  // };
+    requestAnimationFrame(() => skewScrolling());
+  };
 
   return (
-    <div className={styles.projects}>
+    <div ref={scrollContainer} className={styles.projects}>
       <h2 className={styles.projectsHeading}>Projects</h2>
 
       <section>
@@ -125,8 +125,8 @@ const Projects = () => {
           </section>
         </div>
         <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
+          // data-aos="fade-up"
+          // data-aos-duration="2400"
           className={styles.imgBox}
         >
           <img src={Project1_2} alt="projectImg" />
@@ -189,8 +189,8 @@ const Projects = () => {
           </section>
         </div>
         <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
+          // data-aos="fade-up"
+          // data-aos-duration="2400"
           className={styles.imgBox}
         >
           <img src={Project2_2} alt="projectImg" />
@@ -260,8 +260,8 @@ const Projects = () => {
           </section>
         </div>
         <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
+          // data-aos="fade-up"
+          // data-aos-duration="2400"
           className={styles.imgBox}
         >
           <img src={Project3_1} alt="projectImg" />
@@ -326,8 +326,8 @@ const Projects = () => {
           </section>
         </div>
         <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
+          // data-aos="fade-up"
+          // data-aos-duration="2400"
           className={styles.imgBox}
         >
           <img src={Project4_2} alt="projectImg" />
@@ -391,8 +391,8 @@ const Projects = () => {
           </section>
         </div>
         <section
-          data-aos="fade-up"
-          data-aos-duration="2400"
+          // data-aos="fade-up"
+          // data-aos-duration="2400"
           className={styles.imgBox}
         >
           <img src={Project5_2} alt="projectImg" />

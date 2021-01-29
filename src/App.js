@@ -36,9 +36,11 @@ const App = () => {
         <>
           <Landing />
           <About />
-          <Projects />
-          <BottomPara />
-          <Contact />
+          <section style={{ backgroundColor: "black" }}>
+            <Projects />
+            <BottomPara />
+            <Contact />
+          </section>
         </>
       )}
     </>
