@@ -102,9 +102,9 @@
 @media only screen and (max-width: 767px) {
   /* phones */
   .landing {
-    // display: flex;
+    display: block;
     height: 90vh;
-    // overflow-x: hidden;
+    width: 53vh;
     .addict {
       height: calc(11.5385vw - 0.115385);
       margin-left: 5px; //
@@ -119,7 +119,7 @@
         font-size: 13px;
         width: 130px; //
         // margin: 0px 57px;
-        margin-left: 245px;
+        margin-left: 70%;
       }
     }
 
@@ -179,7 +179,7 @@
 
       h5 {
         color: black;
-        margin-top: 120%;
+        margin-top: 130%;
       }
       h5 a {
         text-decoration: none !important;
