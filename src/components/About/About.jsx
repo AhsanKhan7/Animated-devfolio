@@ -48,8 +48,10 @@ const About = () => {
         className={styles.section3}
       >
         <p>
-          My aim is to take coding into the professional dimension where I hope
-          to bring <span>value</span> and continously grow myself.
+          {/* My aim is to take coding into the professional dimension where I hope
+          to bring <span>value</span> and continously grow myself. */}
+          I always strive to develop <span>unique design</span> solutions and
+          improve the quality of product.
         </p>
       </section>
     </div>

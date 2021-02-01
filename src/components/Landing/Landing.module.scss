@@ -90,7 +90,7 @@
       position: relative;
       top: 15%;
       left: -6%;
-      transform: rotate(5deg);
+      transform: rotate(2.5deg);
       img {
         width: 350px;
         height: 500px;
@@ -102,8 +102,8 @@
 @media only screen and (max-width: 767px) {
   /* phones */
   .landing {
-    display: flex;
-    height: 50vh;
+    // display: flex;
+    height: 90vh;
 
     .addict {
       height: calc(11.5385vw - 0.115385);
@@ -112,13 +112,14 @@
       transform: rotate(-90deg) translate(-100%, 0);
       transform-origin: top left;
 
-      margin-top: 110px; //
+      margin-top: 80px; //
       font-family: sans-serif;
 
       p {
         font-size: 13px;
         width: 130px; //
-        margin: 0px -37px;
+        // margin: 0px 57px;
+        margin-left: 300px;
       }
     }
 
@@ -132,30 +133,31 @@
       width: 30px; //
     }
     .addict p:before {
-      right: 100%;
+      // right: 100%;
       margin-top: 7px;
 
-      margin-right: 40px; //
+      margin-left: -35px !important; //
     }
     .addict p:after {
       left: 100%;
 
       margin-top: 7px;
-      margin-left: 17px;
+      margin-left: 5px !important;
     }
 
     .intro {
-      width: 400px; //
+      width: 80%; //
+
       font-family: "Open Sans", sans-serif;
-      margin-left: -30px; //
+      margin-left: 30px; //
       h4 {
-        margin-top: 35px; //
+        margin-top: -35px; //
       }
       .h3Intro {
         margin-top: 60px; //
       }
       h3 {
-        font-size: 5vw; //
+        font-size: 5.8vw; //
         font-weight: 300; //
         span {
           position: relative;
@@ -176,24 +178,24 @@
       }
 
       h5 {
-        margin-top: 25px;
+        color: black;
+        margin-top: 350px;
       }
       h5 a {
         text-decoration: none !important;
         cursor: pointer;
-        color: white;
+        color: black;
       }
     }
 
     .profilePic {
-      margin-top: 20px; //
-
       position: relative;
-      top: 22%;
-      left: -3.5%;
+      top: -57%;
+      left: 35.5%;
+      transform: rotate(1deg);
       img {
-        width: 150px;
-        height: 250px;
+        width: 230px;
+        height: 350px;
       }
     }
   }

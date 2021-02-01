@@ -26,7 +26,7 @@ const App = () => {
       setShow(true);
     }, 1170);
   }, [show]);
-
+  console.log("hei", window.innerHeight);
   return (
     <>
       <section className={show ? "anim" : "anim2"}>
