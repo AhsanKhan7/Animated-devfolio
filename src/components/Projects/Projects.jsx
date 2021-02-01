@@ -89,7 +89,7 @@ const Projects = () => {
               <section className={styles.projectDescDiv1}>
                 <h1 className={styles.singleProjectHeading}>
                   <a
-                    href="https://vigorous-franklin-94f857.netlify.app/"
+                    href="https://oncart24.web.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
