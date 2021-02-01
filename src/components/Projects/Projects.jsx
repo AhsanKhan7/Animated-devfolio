@@ -169,8 +169,8 @@ const Projects = () => {
                 <p>
                   A progressive web app of an online luxury car booking. where
                   the team of an admin receives bookings from different cities
-                  or areas. and provide some state ofthe art cars like sedan and
-                  SUV for users transportation.
+                  or areas. and provide some state of the art cars like sedan
+                  and SUV for users transportation.
                 </p>
                 <h3>TECH BEING IMPLEMENTED</h3>
                 <section className={styles.techDesc}>
@@ -508,8 +508,8 @@ const Projects = () => {
                 <p>
                   A progressive web app of an online luxury car booking. where
                   the team of an admin receives bookings from different cities
-                  or areas. and provide some state ofthe art cars like sedan and
-                  SUV for users transportation.
+                  or areas. and provide some state of the art cars like sedan
+                  and SUV for users transportation.
                 </p>
                 <h3>TECH BEING IMPLEMENTED</h3>
                 <section className={styles.techDesc}>
