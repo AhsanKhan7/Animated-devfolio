@@ -65,7 +65,6 @@ const Projects = () => {
     if (window.innerWidth > 768) {
       scrollContainer.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`;
     }
-
     requestAnimationFrame(() => skewScrolling());
   };
 
@@ -81,7 +80,7 @@ const Projects = () => {
 
   return (
     <>
-      {!show ? (
+      {!show && (
         <div ref={scrollContainer} className={styles.projects}>
           <h2 className={styles.projectsHeading}>Projects</h2>
 
@@ -426,7 +425,8 @@ const Projects = () => {
           </h2>
           <hr className={styles.middleLine} />
         </div>
-      ) : (
+      )}
+      {show && (
         <div className={styles.projects}>
           <h2 className={styles.projectsHeading}>Projects</h2>
 
