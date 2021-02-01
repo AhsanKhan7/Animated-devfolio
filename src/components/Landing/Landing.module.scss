@@ -90,7 +90,7 @@
       position: relative;
       top: 15%;
       left: -6%;
-      transform: rotate(2.5deg);
+      transform: rotate(1.5deg);
       img {
         width: 350px;
         height: 500px;
@@ -104,7 +104,7 @@
   .landing {
     display: block;
     height: 90vh;
-    width: 53vh;
+
     .addict {
       height: calc(11.5385vw - 0.115385);
       margin-left: 5px; //
@@ -118,7 +118,6 @@
       p {
         font-size: 13px;
         width: 130px; //
-        // margin: 0px 57px;
         margin-left: 70%;
       }
     }
@@ -134,15 +133,15 @@
     }
     .addict p:before {
       // right: 100%;
-      margin-top: 7px;
+      margin-top: 7px; //
 
       margin-left: -35px !important; //
     }
     .addict p:after {
-      left: 100%;
+      left: 100%; //
 
-      margin-top: 7px;
-      margin-left: 5px !important;
+      margin-top: 7px; //
+      margin-left: 5px !important; //
     }
 
     .intro {
@@ -179,7 +178,7 @@
 
       h5 {
         color: black;
-        margin-top: 130%;
+        margin-top: 135%;
       }
       h5 a {
         text-decoration: none !important;
@@ -189,9 +188,12 @@
     }
 
     .profilePic {
+      overflow-x: hidden;
       position: relative;
-      top: 35%;
-      left: 35%;
+      // top: 35%;
+      // left: 31%;
+      margin-top: 55%;
+      margin-left: 31%;
       transform: rotate(1deg);
       img {
         width: 230px;
