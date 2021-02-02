@@ -43,11 +43,13 @@ const Projects = () => {
     requestAnimationFrame(() => skewScrolling());
   }, []);
 
-  useEffect(() => {
-    document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height
-    }px`;
-  }, [size.height]);
+  // useEffect(() => {
+  //   if (window.innerWidth > 768) {
+  //     document.body.style.height = `${
+  //       scrollContainer.current.getBoundingClientRect().height
+  //     }px`;
+  //   }
+  // }, [size.height]);
 
   const skewScrolling = () => {
     skewConfigs.current = window.scrollY;
@@ -71,16 +73,16 @@ const Projects = () => {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.innerWidth < 768) {
-        handleShow(true);
-      } else handleShow(false);
-    });
+    // window.addEventListener("scroll", () => {
+    if (window.innerWidth < 768) {
+      handleShow(true);
+    } else handleShow(false);
+    // });
   }, []);
 
   return (
     <>
-      {!show && (
+      {!show ? (
         <div ref={scrollContainer} className={styles.projects}>
           <h2 className={styles.projectsHeading}>Projects</h2>
 
@@ -425,8 +427,7 @@ const Projects = () => {
           </h2>
           <hr className={styles.middleLine} />
         </div>
-      )}
-      {show && (
+      ) : (
         <div className={styles.projects}>
           <h2 className={styles.projectsHeading}>Projects</h2>
 
